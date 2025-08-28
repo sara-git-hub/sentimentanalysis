@@ -21,7 +21,7 @@ app.mount("/static", StaticFiles(directory=BASE_DIR/"static"), name="static")
 
 # Variables pour Hugging Face
 MODEL_NAME = os.getenv("HF_MODEL", "distilbert-base-uncased-finetuned-sst-2-english")
-CACHE_DIR = "/app/.cache/huggingface"
+CACHE_DIR = os.getenv("HF_HOME", "/tmp/huggingface")
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, cache_dir=CACHE_DIR)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME, cache_dir=CACHE_DIR)

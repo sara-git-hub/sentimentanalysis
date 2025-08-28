@@ -1,0 +1,85 @@
+/* ----------- Style global ----------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- Container principal ----------- */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ----------- Titre ----------- */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ----------- Formulaire ----------- */
+.form-sentiment {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* ----------- Bouton ----------- */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ----------- Zone résultat ----------- */
+.result {
+    margin-top: 25px;
+}
+
+.result h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* ----------- Affichage JSON ----------- */
+.result pre {
+    background: #f9fafb;       /* fond sombre comme un éditeur */
+    color: #1e1e1e;            /* couleur texte */
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 14px;
+    white-space: pre-wrap;     /* garde l’indentation */
+    word-wrap: break-word;
+    overflow-x: auto;
+}

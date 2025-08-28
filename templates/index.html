@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse de Sentiment</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analyse de Sentiment</h1>
+
+        <form id="sentiment-form" class="form-sentiment">
+            <textarea name="text" id="text-input" placeholder="Tapez votre texte ici..." required></textarea>
+            <button type="submit">Analyser le Sentiment</button>
+        </form>
+
+        <div class="result hidden" id="result-box">
+            <h2>Résultat :</h2>
+            <pre id="result-text"></pre>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

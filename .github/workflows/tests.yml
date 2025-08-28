@@ -18,3 +18,5 @@ jobs:
       - name: Run tests
         run: |
           pytest -v
+      - name: Run benchmark
+        run: python benchmark.py

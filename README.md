@@ -80,7 +80,7 @@ docker run -d --name sentiment-container -p 7860:7860 sentiment-app
 ```
 ---
 
-💻 Utilisation
+## 💻 Utilisation
 
 Exemple API FastAPI
 

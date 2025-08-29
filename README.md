@@ -3,10 +3,10 @@
 Une application web pour l'analyse de sentiments de textes en utilisant des modèles de NLP (Natural Language Processing). L'application propose une interface interactive via **Gradio** et peut être déployée facilement grâce à **Docker**.
 Lapplication est deployé sur **huggingface spaces** via gradio et docker.
 
-![Python](https://img.shields.io/badge/python-3.10-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?logo=fastapi)
-![Gradio](https://img.shields.io/badge/Gradio-UI-orange)
-![Docker](https://img.shields.io/badge/Docker-ready-blue?logo=docker)
+![Python](https://img.shields.io/badge/python-3.12.10-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.116.1-009688?logo=fastapi)
+![Gradio](https://img.shields.io/badge/Gradio-5.43.1-orange)
+![Docker](https://img.shields.io/badge/Docker-28.3.2-blue?logo=docker)
 
 ---
 

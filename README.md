@@ -1,7 +1,7 @@
 # 📊 Sentiment Analysis App
 
 Une application web pour l'analyse de sentiments de textes en utilisant le modèle distilbert-base-uncased-finetuned-sst-2-english. L'application propose également une interface interactive via **Gradio** et peut être déployée facilement grâce à **Docker**.
-Lapplication est deployé sur **huggingface spaces** via gradio et docker.
+Lapplication est deployée sur **huggingface spaces** via gradio et docker.
 
 ![Python](https://img.shields.io/badge/python-3.12.10-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.116.1-009688?logo=fastapi)

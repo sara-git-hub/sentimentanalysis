@@ -40,8 +40,8 @@ Lapplication est deployé sur **huggingface spaces** via gradio et docker.
 - API REST avec **FastAPI**.
 - Interface web simple **HTML CSS**.
 - Interface web interactive via **Gradio**.
-- Tests unitaires **pytest pour garantir la stabilité du code et yml visible sur github.
-- Déploiement simple avec Docker.
+- Tests unitaires **pytest** pour garantir la stabilité du code et **yml** visible sur github.
+- Déploiement simple avec **Docker**.
 
 ---
 

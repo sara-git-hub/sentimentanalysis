@@ -8,10 +8,10 @@ os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 
 # Petit dataset d'évaluation
 test_samples = [
-    ("I love this product!", "POSITIVE"),
-    ("This is the worst experience ever.", "NEGATIVE"),
-    ("Absolutely fantastic!", "POSITIVE"),
-    ("I hate it.", "NEGATIVE"),
+    ("It's an amazin product", "POSITIVE"),
+    ("Very bad experience", "NEGATIVE"),
+    ("I love it!", "POSITIVE"),
+    ("Worst experience ever", "NEGATIVE"),
 ]
 
 # Trois modèles pour comparaison
@@ -62,7 +62,7 @@ def run_benchmark():
 # Exécution et graphique
 # -----------------------------
 if __name__ == "__main__":
-    df = run_benchmark()  # d'abord on calcule les résultats
+    df = run_benchmark()
 
     fig, ax1 = plt.subplots(figsize=(10, 6))
 

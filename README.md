@@ -1,9 +1,24 @@
-# Sentiment Analysis App
+# 📊 Sentiment Analysis App
 
-Une application web pour l'analyse de sentiments de textes en utilisant des modèles de NLP (Natural Language Processing). L'application propose une interface interactive via **Gradio** et peut être déployée facilement grâce à Docker.
-Lapplication est deployé sur huggingface via gradio et docker.
+Une application web pour l'analyse de sentiments de textes en utilisant des modèles de NLP (Natural Language Processing). L'application propose une interface interactive via **Gradio** et peut être déployée facilement grâce à **Docker**.
+Lapplication est deployé sur **huggingface spaces** via gradio et docker.
+
+![Python](https://img.shields.io/badge/python-3.10-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?logo=fastapi)
+![Gradio](https://img.shields.io/badge/Gradio-UI-orange)
+![Docker](https://img.shields.io/badge/Docker-ready-blue?logo=docker)
 
 ---
+
+## 📑 Table des matières
+- [Structure du projet](#-structure-du-projet)
+- [Fonctionnalités](#-fonctionnalités)
+- [Installation](#-installation)
+- [Utilisation](#-utilisation)
+- [Liens](#-liens)
+- [Résultat du mini benchmark](#résultat-du-mini-benchmark)
+---
+
 
 ## 📂 Structure du projet
 
@@ -21,12 +36,70 @@ Lapplication est deployé sur huggingface via gradio et docker.
 ## ⚡ Fonctionnalités
 
 - Analyse de sentiment (positif, négatif) pour du texte en entrée en anglais.
+- API REST avec **FastAPI**.
+- Interface web simple **HTML CSS**.
 - Interface web interactive via **Gradio**.
-- Interface web simple HTML CSS.
-- Tests unitaires pour garantir la stabilité du code.
+- Tests unitaires **pytest pour garantir la stabilité du code.
 - Déploiement simple avec Docker.
 
 ---
+
+
+## 🛠 Installation
+
+Clonez le projet :
+
+```bash
+git clone https://github.com/sara-git-hub/sentimentanalysis.git
+cd sentimentanalysis
+```
+
+Créez un environnement virtuel et installez les dépendances :
+
+```bash
+python -m venv venv
+source venv/bin/activate   # Linux / Mac
+venv\Scripts\activate      # Windows
+pip install -r requirements.txt
+```
+
+Lancez FastAPI :
+
+```bash
+uvicorn app:app --reload --host 127.0.0.1 --port 7860
+```
+
+➡ Application disponible sur : http://127.0.0.1:7860
+
+Avec Docker :
+
+```bash
+docker build -t sentiment-app .
+docker run -d --name sentiment-container -p 7860:7860 sentiment-app
+```
+---
+
+💻 Utilisation
+Exemple API FastAPI
+
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1:7860/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "text": "I am happy"
+}'
+```
+Réponse :
+
+```bash
+{
+  "text": "I am happy",
+  "sentiment": "positive",
+  "confidence": 1
+}
+```
 
 ## 🚀 Liens
 

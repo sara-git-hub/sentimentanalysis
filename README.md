@@ -30,6 +30,7 @@ Lapplication est deployé sur **huggingface spaces** via gradio et docker.
 - `benchmark.py` : Script pour comparer entre différents modèles.
 - `requirements.txt` : Dépendances Python nécessaires.
 - `Dockerfile` : Fichier pour créer une image Docker de l'application.
+- `tests_swagger.docx`:  Captures d’écran : Swagger (/docs) et page HTML de test.
 
 ---
 
